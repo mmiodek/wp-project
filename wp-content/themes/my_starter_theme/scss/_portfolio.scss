@@ -1,0 +1,117 @@
+/* =============== Portfolio ==================*/
+
+.portfolio-holder {
+	width: 100%;
+	max-width: 900px;
+	margin: 20px auto 40px;
+	display: block;
+	// justify-content: space-between;
+	// flex-flow: row wrap;
+	// align-items: stretch;
+	// align-content: stretch;
+	}
+#filters {
+	ul {
+		display: flex;
+		justify-content: center;
+		border-collapse: separate;
+		flex-flow: row wrap;
+		align-items: stretch;
+		align-content: stretch;
+			li {
+				display: inline-block;		
+				border: 2px solid #5f7087;
+				width: 150px;
+				margin: -1px;
+				background-color: #fff;
+
+				&:first-child {
+					border-radius: 5px 0 0 5px;
+				}
+				&:last-child {
+					border-radius: 0 5px 5px 0;
+				}
+				span {
+					display: block;
+					padding: 10px 20px;
+					color: rgb(51, 51, 51);
+					font-family: 'Open Sans', Arial, Tahoma, Sans;
+					font-size: 1em;
+					text-align: center;
+					text-transform: uppercase;
+					&:hover, &.active {
+					cursor: pointer;
+					color: #fff;
+					background-color: #5f7087;
+					}
+				}
+
+			}
+	}
+}
+
+.portfolio-item-wrapper {
+	display: inline-block;
+	width: 31%;
+	height: 333px;
+	margin-bottom: 20px;
+	margin-right: 1.5%;
+	
+}
+
+a.portfolio-item-wrapper:hover .portfolio-item .slide-up-cover {
+	top:-333px;
+	
+}
+
+.portfolio-item{
+	height: 100%;
+	width: 100%;
+	background-color: #FFF;
+	border: 1px solid #919191;
+	border-bottom: 2px solid #586678;
+	overflow: hidden;
+}
+
+.portfolio-img{
+	width: 100%;
+
+}
+.portfolio-caption {
+	display: block;
+	text-align: center;
+	padding: 20px;
+	height: 130px;
+	width: 100%;
+	margin-top: -3px;
+
+
+	h4 {
+		color: #ff4910;
+		line-height: 28px;
+		font: 600 22px "Open Sans",Arial,Tahoma,Sans;
+		margin: 0 0 10px;
+	}
+
+	p {
+		color: #919191;
+		font: 14px "Open Sans",Arial,Tahoma,Sans;
+		line-height: 16px;
+	}
+}
+
+.slide-up-cover {
+	transition: all 0.2s linear;
+	background-color: #596678;
+	position: relative;
+	top:0;
+	height: 333px;
+}
+
+.hidden {
+	//position: absolute;
+	//left: 0px; top: 0px;
+	transform: translate3d(0px, 0px, 0px) scale3d(0.001, 0.001, 1);
+	opacity: 0;
+	transition: all 1s;
+}

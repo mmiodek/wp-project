@@ -1,0 +1,129 @@
+
+$mainfont:  'Open Sans', sans-serif;
+$font2:	'Baumans', cursive;
+$bg_color: #EBE8DE;
+
+
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+@mixin clear-floats {
+   content: "";  
+   display: table; 
+   clear: both;
+}
+
+@mixin centered{
+	width:auto;
+	max-width:900px;
+	margin:0 auto;
+}
+
+@mixin bar {
+	display: block;
+	position: absolute;
+	width: 40px;
+	height: 8px;
+	left: 0;
+	background: #EDA28C;
+	//-webkit-transition: all 0.35s cubic-bezier(0.75, 0.25, 0.10, 0.95);
+	-webkit-transition: all 0.35s cubic-bezier(0.75, 0.25, 0.10, 0.95);
+	        transition: all 0.35s cubic-bezier(0.75, 0.25, 0.10, 0.95);
+}
+
+
+/* =============== Global Section ==================*/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	border-top: 5px solid tomato;
+	background:  $bg_color;
+	font-family: $mainfont;
+	color: #333333;
+	font-size: 14px;
+}
+
+h3 {
+	font-size:20px;
+	border-bottom: 1px solid #D6D0C1;
+	padding: 20px 0;
+	margin-bottom: 20px;
+	}
+
+input {
+	font-family: $mainfont;
+	font-size:16px;
+	padding: 7px;
+	outline: 0;
+	border:0;
+	width:250px;
+	background: $bg_color;
+	border-radius:5px;
+}
+
+input[type=submit] {
+	width:auto;
+	padding: 5px 18px;
+	line-height:25px;
+	text-shadow:none;
+	cursor:pointer;
+	box-shadow: none;
+	background: #333333;
+	color: #fff;
+}
+
+p {
+	margin: 5px 0;
+	line-height: 25px;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+	-webkit-transition: color .5s ease;
+	        transition: color .5s ease;
+}
+
+strong {
+	font-weight: bold;
+}
+
+figcaption {
+	line-height: 25px;
+	font-size:14px;
+	width:200px;
+}
+
+figcaption strong {
+	border-bottom: 1px solid #D6D0C1;
+	padding-bottom:10px;
+	margin: 10px 0;
+	display:block;
+}
+
+.button {
+    background-color: #eb653c;
+    background-image: -webkit-linear-gradient(top, #ff8c66 0%, #e56038 100%);
+    background-image: linear-gradient(to bottom, #ff8c66 0%, #e56038 100%);
+    border: 1px solid #c3532e;
+    border-radius: 5px;
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.3);
+    color: #ebe8de;
+    padding: 7px 14px;
+    text-decoration: none;
+    text-shadow: 1px 1px 0 #ff8155;
+}
+.button:hover {
+    background: none repeat scroll 0 0 #ebe8de;
+    border-color: #ebe8de;
+    color: #4a463b;
+    text-shadow: none;
+}

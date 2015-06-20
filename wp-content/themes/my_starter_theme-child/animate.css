@@ -1,0 +1,40 @@
+.animate-if.ng-enter {
+  -webkit-animation: 0.5s fade-in;
+  -moz-animation: 0.5s fade-in;
+  -o-animation: 0.5s fade-in;
+  animation: 0.5s fade-in;
+ 
+}
+
+.animate-if.ng-leave {
+  -webkit-animation: 0.5s fade-out;
+  -moz-animation: 0.5s fade-out;
+  -o-animation: 0.5s fade-out;
+  animation: 0.5s fade-out;
+ 
+}
+
+@keyframes fade-in {
+  from { left: -1349px; }
+  to { left: 0; }
+}
+@-moz-keyframes fade-in {
+  from { left: -1349px; }
+  to { left: 0; }
+}
+@-webkit-keyframes fade-in {
+  from { left: -1349px; }
+  to { left: 0; }
+}
+
+/*@keyframes fade-out {
+  from { left: 0; }
+  to { left: -1349px; }
+}
+@-moz-keyframes fade-out {
+  from { left: 0; }
+  to { left: -1349px; }
+@-webkit-keyframes fade-out {
+  from { left: 0; }
+  to { left: -1349px; }
+}*/

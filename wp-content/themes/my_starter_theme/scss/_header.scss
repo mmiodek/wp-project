@@ -1,0 +1,72 @@
+/* =============== Header Section ==================*/
+
+
+header {
+	position: relative;
+	width: auto;
+	max-width: 900px;
+	margin: 0 auto 20px	auto;
+
+	h1 {
+		margin: 35px 0 0 0;
+		font-size: 55px;
+		color: tomato;
+		font-family: $font2;
+	}
+	p {
+		font-family: $mainfont;
+		font-size: 16px;
+		color: #4A463B;
+		margin-left: 132px;
+	}
+}
+
+nav.main-nav {
+	position: absolute;
+	right:0;
+	bottom: 0;
+
+	ul li{
+		display: block;
+		float: left;
+		padding: 3px 15px;
+
+		&.current_page_item {
+		color: #E56038;	
+		}
+	
+
+		a {
+			font-family: $mainfont;
+			text-transform: uppercase;
+			-webkit-transition: all .25s ease;
+			        transition: all .25s ease;
+			&:hover {
+			color: #E56038;
+			}
+		}
+	}
+
+}
+
+#mobileMenu {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: none;
+
+	ul li {
+		display:block;
+		background-color: #E56038;
+		color: #fff;
+		padding: 12px 0;
+		letter-spacing: 0.1em;
+		text-align: center;
+		text-transform: uppercase;
+		border-bottom: 1px solid #CC5836;
+	}
+}
+
+.toggleMobile {display:none;}
+

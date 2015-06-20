@@ -1,0 +1,161 @@
+{
+  "ID": 5,
+  "title": "Home",
+  "status": "publish",
+  "type": "page",
+  "author": {
+    "ID": 1,
+    "username": "admin",
+    "name": "admin",
+    "first_name": "",
+    "last_name": "",
+    "nickname": "admin",
+    "slug": "admin",
+    "URL": "",
+    "avatar": "http://0.gravatar.com/avatar/6bae7c578c88bcbc4da0e03262e18df3?s=96",
+    "description": "",
+    "registered": "2013-03-23T19:42:44+00:00",
+    "meta": {
+      "links": {
+        "self": "http://localhost/wp-json/users/1",
+        "archives": "http://localhost/wp-json/users/1/posts"
+      },
+      "0": false
+    }
+  },
+  "content": "",
+  "parent": null,
+  "link": "http://localhost/",
+  "date": "2013-04-07T19:18:30",
+  "modified": "2015-04-19T16:37:43",
+  "format": "standard",
+  "slug": "home",
+  "guid": "http://localhost/?page_id=5",
+  "excerpt": null,
+  "menu_order": 0,
+  "comment_status": "open",
+  "ping_status": "open",
+  "sticky": false,
+  "date_tz": "UTC",
+  "date_gmt": "2013-04-07T19:18:30",
+  "modified_tz": "UTC",
+  "modified_gmt": "2015-04-19T16:37:43",
+  "meta": {
+    "links": {
+      "self": "http://localhost/wp-json/pages/home",
+      "author": "http://localhost/wp-json/users/1",
+      "collection": "http://localhost/wp-json/pages",
+      "replies": "http://localhost/wp-json/pages/5/comments",
+      "version-history": "http://localhost/wp-json/pages/5/revisions"
+    },
+    "": false,
+    "gallery": [
+      {
+        "acf_fc_layout": "",
+        "gallery-img": "http://localhost/wp-content/uploads/2013/04/pic2s.jpg",
+        "gallery-img-cap": "Photo by: Spiderman",
+        "gallery-content": "warf es einen letzten Blick zurück auf die Skyline seiner Heimatstadt Buchstabhausen"
+      },
+      {
+        "acf_fc_layout": "",
+        "gallery-img": "http://localhost/wp-content/uploads/2013/04/pic1s.jpg",
+        "gallery-img-cap": "Photo by: Superman",
+        "gallery-content": "Als es die ersten Hügel des Kursivgebirges erklommen hatte"
+      },
+      {
+        "acf_fc_layout": "",
+        "gallery-img": "http://localhost/wp-content/uploads/2013/04/pic3s.jpg",
+        "gallery-img-cap": "Photo by: Batman",
+        "gallery-content": "die Headline von Alphabetdorf und die Subline seiner eigenen Straße."
+      },
+      {
+        "acf_fc_layout": "",
+        "gallery-img": "http://localhost/wp-content/uploads/2013/04/pic4s.jpg",
+        "gallery-img-cap": "Photo by: X-Man",
+        "gallery-content": "Wehmütig lief ihm eine rhetorische Frage über die Wange."
+      }
+    ],
+    "slider": [
+      {
+        "slider_title": "Lorem ipsum dolor",
+        "slider_text": "Weit hinten, hinter den Wortbergen, fern der Länder Vokalien und Konsonantien leben die Blindtexte. Abgeschieden wohnen Sie in Buchstabhausen an der Küste des Semantik.",
+        "slider_image": {
+          "id": 42,
+          "alt": "slide3",
+          "title": "slide3",
+          "caption": "",
+          "description": "",
+          "mime_type": "image/jpeg",
+          "url": "http://localhost/wp-content/uploads/2013/04/slide3.jpg",
+          "width": 1600,
+          "height": 401,
+          "sizes": {
+            "thumbnail": "http://localhost/wp-content/uploads/2013/04/slide3-150x150.jpg",
+            "thumbnail-width": 150,
+            "thumbnail-height": 150,
+            "medium": "http://localhost/wp-content/uploads/2013/04/slide3-300x75.jpg",
+            "medium-width": 300,
+            "medium-height": 75,
+            "large": "http://localhost/wp-content/uploads/2013/04/slide3-1024x257.jpg",
+            "large-width": 640,
+            "large-height": 161
+          }
+        }
+      },
+      {
+        "slider_title": "Nulla consequat",
+        "slider_text": "Ein kleines Bächlein namens Duden fließt durch ihren Ort und versorgt sie mit den nötigen Regelialien. Es ist ein paradiesmatisches Land, in dem einem gebratene Satzteile in den Mund fliegen.",
+        "slider_image": {
+          "id": 41,
+          "alt": "slide2",
+          "title": "slide2",
+          "caption": "",
+          "description": "",
+          "mime_type": "image/jpeg",
+          "url": "http://localhost/wp-content/uploads/2013/04/slide2.jpg",
+          "width": 1600,
+          "height": 401,
+          "sizes": {
+            "thumbnail": "http://localhost/wp-content/uploads/2013/04/slide2-150x150.jpg",
+            "thumbnail-width": 150,
+            "thumbnail-height": 150,
+            "medium": "http://localhost/wp-content/uploads/2013/04/slide2-300x75.jpg",
+            "medium-width": 300,
+            "medium-height": 75,
+            "large": "http://localhost/wp-content/uploads/2013/04/slide2-1024x257.jpg",
+            "large-width": 640,
+            "large-height": 161
+          }
+        }
+      },
+      {
+        "slider_title": "Lorem ipsum",
+        "slider_text": "Nicht einmal von der allmächtigen Interpunktion werden die Blindtexte beherrscht – ein geradezu unorthographisches Leben.",
+        "slider_image": {
+          "id": 40,
+          "alt": "slide1",
+          "title": "slide1",
+          "caption": "",
+          "description": "",
+          "mime_type": "image/jpeg",
+          "url": "http://localhost/wp-content/uploads/2013/04/slide1.jpg",
+          "width": 1600,
+          "height": 401,
+          "sizes": {
+            "thumbnail": "http://localhost/wp-content/uploads/2013/04/slide1-150x150.jpg",
+            "thumbnail-width": 150,
+            "thumbnail-height": 150,
+            "medium": "http://localhost/wp-content/uploads/2013/04/slide1-300x75.jpg",
+            "medium-width": 300,
+            "medium-height": 75,
+            "large": "http://localhost/wp-content/uploads/2013/04/slide1-1024x257.jpg",
+            "large-width": 640,
+            "large-height": 161
+          }
+        }
+      }
+    ]
+  },
+  "featured_image": null,
+  "terms": []
+}

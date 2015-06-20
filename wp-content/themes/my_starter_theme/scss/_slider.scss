@@ -1,0 +1,97 @@
+/* =============== Slider Section ==================*/
+.slider_content {
+	line-height: 25px;
+	font-family: $mainfont;
+	width: 350px;
+	position: absolute;
+	top: 15%;
+	left: 15%;
+	display: none;
+	z-index: 11;
+
+}
+
+.slider_content_visible {
+	display:block;
+}
+
+.slider-container {
+	width: auto;
+	margin: 0 auto;
+	position: relative;
+}
+
+#slider_content1 h3, #slider_content2 h3, #slider_content3 h3 {
+	color: $bg_color;
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	background-color: #333333;
+	padding: 10px 15px;
+	border-radius: 15px 0 15px 0;
+	display: inline-block;
+}
+
+#slider_content1 p, #slider_content2 p, #slider_content3 p {
+	margin: 0 0 30px 0;
+	color: #4a463b;
+	background-color: $bg_color;
+	padding: 10px 15px;
+	border-radius: 5px;
+}
+
+#slides {
+	height: 400px;
+	width: 1349px;
+	overflow: hidden;
+	position:relative;
+}
+.slide-holder{
+	width: 8094px;
+	display: block;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	transform: translate3d(0px, 0px, 0px);
+	transition: all 400ms ease 0s;
+
+	&:after{
+		@include clear-floats;
+	}
+}
+.slide{
+	height: auto;
+	width: 1349px;
+	float: left;
+	img {
+		display: block;
+		height: auto;
+		width: 100%;
+	}
+}
+
+.slider-nav {
+	text-align: center;
+	bottom: 20px;
+	width: 100%;
+    position: absolute;
+    
+
+
+	a {
+		background: none repeat scroll 0 0 #ddd;
+	    border-radius: 50%;
+	    display: inline-block;
+	    height: 20px;
+	    overflow: hidden;
+	    text-indent: -9999px;
+	    width: 20px;
+	    margin-right: 10px;
+	    &:last-of-type {
+	    	margin-right: 0;
+	    }
+	 &.current-slider-nav {
+	 	background: none repeat scroll 0 0 tomato;
+	 }
+	}
+}

@@ -1,0 +1,14 @@
+.carousel-indicators li {
+	background: none repeat scroll 0 0 #ddd;
+  border-radius: 50%;
+  display: inline-block;
+  height: 20px;
+  overflow: hidden;
+  text-indent: -9999px;
+  width: 20px;
+  margin-right: 10px;
+}
+
+.carousel-indicators .active {
+  background: none repeat scroll 0 0 tomato;
+}

@@ -1,0 +1,42 @@
+/*
+ Theme Name:   My Starter Theme Child
+ Theme URI:    /my_starter_theme-child/
+ Description:  Twenty Fifteen Child Theme
+ Author:       John Doe
+ Author URI:   http://example.com
+ Template:     my_starter_theme
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         responsive-layout, angular-build
+ Text Domain:  my_starter_theme-child
+*/
+.slider_content {
+  line-height: 25px;
+  font-family: "Open Sans", sans-serif;
+  width: 350px;
+  position: absolute;
+  top: 15%;
+  left: 15%;
+  z-index: 11;
+  display: block;
+}
+
+.slider_content h3 {
+	color: #EBE8DE;
+	font-size: 25px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	background-color: #333333;
+	padding: 10px 15px;
+	border-radius: 15px 0 15px 0;
+	display: inline-block;
+}
+
+.slider_content p {
+	margin: 0 0 30px 0;
+	color: #4a463b;
+	background-color: #EBE8DE;
+	padding: 10px 15px;
+	border-radius: 5px;
+}

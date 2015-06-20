@@ -1,0 +1,23 @@
+
+<!-- ============== Slider ================= -->
+<section class="slider-container">
+	<article ng-repeat="slide in slides" ng-if="selected === $index" class="slider_content">
+				<h3>{{slide.slider_title}}</h3>
+				<p>{{slide.slider_text}}</p>
+				<a class="button" href="some_page.html">Learn more</a>
+	</article> 
+	<section id="slides">
+		<div class="slide-holder" ng-style="transformStyle">
+			<figure ng-repeat="slide in slides" id="slide-{{$index+1}}" class="slide">
+				<img ng-src="{{slide.slider_image.url}}"/>
+			</figure>
+		</div>
+	</section>
+
+	<nav class="slider-nav">
+  		<a href="" ng-repeat="slide in slides" ng-click="bind($index)" ng-class="{'current-slider-nav': $index==selected}">Slide {{$index+1}}</a>
+	</nav>
+
+</section>
+<!--End of container-->
+

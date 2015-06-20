@@ -1,0 +1,58 @@
+/* =============== Spacer Section ==================*/
+.spacer {
+	background-color: tomato;
+	height:70px;
+	position: relative;
+	font-size: 18px;
+	color: white;
+
+	p {
+		position: absolute;
+		left: 50%;
+		//line-height: 70px;
+		margin-left:-450px;
+		width: auto;
+		top: 50%;
+ -webkit-transform: translateY(-50%);
+ -ms-transform: translateY(-50%);
+ transform: translateY(-50%);
+	}
+	.search {
+		//margin-top:15px;
+		//width:auto;
+		position:absolute;
+		right:50%;
+		margin-right:-480px;
+		width: auto;
+		  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+		 //@include vertical-align;
+	}
+
+}
+
+.spacer2 {
+	text-align: center;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+	align-items: center;
+	background-color: tomato;
+	height:70px;
+	font-size: 18px;
+	color: white;
+	align-content:center;
+
+	p {
+		flex: 1 1 auto;
+
+	}
+
+	.search-flex {
+		flex: 1 1 auto;
+
+	}
+
+}
