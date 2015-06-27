@@ -31,12 +31,23 @@ function theme_enqueue_scripts() {
 		get_stylesheet_directory_uri() . '/bower_components/angular-touch/angular-touch.min.js'
 	);
 
+	wp_register_script(
+		'angularjs-isotope',
+		get_stylesheet_directory_uri() . '/bower_components/angular-isotope/dist/angular-isotope.min.js'
+	);
+
+	wp_register_script(
+		'jquery',
+		get_stylesheet_directory_uri() . '/bower_components/jquery/dist/jquery.min.js'
+	);
+
 
 	wp_enqueue_script(
 		'my-scripts',
 		get_stylesheet_directory_uri() . '/js/scripts.js',
-		array( 'angularjs', 'angularjs-route', 'angularjs-resource','angularjs-touch')
+		array( 'angularjs', 'angularjs-route', 'angularjs-resource','angularjs-touch','angularjs-isotope', 'jquery')
 	);
+
 
 	wp_localize_script(
 		'my-scripts',

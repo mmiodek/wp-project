@@ -17,20 +17,20 @@
     "registered": "2013-03-23T19:42:44+00:00",
     "meta": {
       "links": {
-        "self": "http://localhost/wp-json/users/1",
-        "archives": "http://localhost/wp-json/users/1/posts"
-      },
-      "0": false
-    }
+        "self": "http://local.wordpress.dev/wp-json/users/1",
+        "archives": "http://local.wordpress.dev/wp-json/users/1/posts"
+      }
+    },
+    "acf": false
   },
   "content": "",
   "parent": null,
-  "link": "http://localhost/",
+  "link": "http://local.wordpress.dev/",
   "date": "2013-04-07T19:18:30",
   "modified": "2015-04-19T16:37:43",
   "format": "standard",
   "slug": "home",
-  "guid": "http://localhost/?page_id=5",
+  "guid": "http://local.wordpress.dev/?page_id=5",
   "excerpt": null,
   "menu_order": 0,
   "comment_status": "open",
@@ -42,35 +42,37 @@
   "modified_gmt": "2015-04-19T16:37:43",
   "meta": {
     "links": {
-      "self": "http://localhost/wp-json/pages/home",
-      "author": "http://localhost/wp-json/users/1",
-      "collection": "http://localhost/wp-json/pages",
-      "replies": "http://localhost/wp-json/pages/5/comments",
-      "version-history": "http://localhost/wp-json/pages/5/revisions"
-    },
+      "self": "http://local.wordpress.dev/wp-json/pages/home",
+      "author": "http://local.wordpress.dev/wp-json/users/1",
+      "collection": "http://local.wordpress.dev/wp-json/pages",
+      "replies": "http://local.wordpress.dev/wp-json/pages/5/comments",
+      "version-history": "http://local.wordpress.dev/wp-json/pages/5/revisions"
+    }
+  },
+  "acf": {
     "": false,
     "gallery": [
       {
         "acf_fc_layout": "",
-        "gallery-img": "http://localhost/wp-content/uploads/2013/04/pic2s.jpg",
+        "galleryImg": "http://local.wordpress.dev/wp-content/uploads/2013/04/pic2s.jpg",
         "gallery-img-cap": "Photo by: Spiderman",
         "gallery-content": "warf es einen letzten Blick zurück auf die Skyline seiner Heimatstadt Buchstabhausen"
       },
       {
         "acf_fc_layout": "",
-        "gallery-img": "http://localhost/wp-content/uploads/2013/04/pic1s.jpg",
+        "galleryImg": "http://local.wordpress.dev/wp-content/uploads/2013/04/pic1s.jpg",
         "gallery-img-cap": "Photo by: Superman",
         "gallery-content": "Als es die ersten Hügel des Kursivgebirges erklommen hatte"
       },
       {
         "acf_fc_layout": "",
-        "gallery-img": "http://localhost/wp-content/uploads/2013/04/pic3s.jpg",
+        "galleryImg": "http://local.wordpress.dev/wp-content/uploads/2013/04/pic3s.jpg",
         "gallery-img-cap": "Photo by: Batman",
         "gallery-content": "die Headline von Alphabetdorf und die Subline seiner eigenen Straße."
       },
       {
         "acf_fc_layout": "",
-        "gallery-img": "http://localhost/wp-content/uploads/2013/04/pic4s.jpg",
+        "galleryImg": "http://local.wordpress.dev/wp-content/uploads/2013/04/pic4s.jpg",
         "gallery-img-cap": "Photo by: X-Man",
         "gallery-content": "Wehmütig lief ihm eine rhetorische Frage über die Wange."
       }
@@ -86,17 +88,17 @@
           "caption": "",
           "description": "",
           "mime_type": "image/jpeg",
-          "url": "http://localhost/wp-content/uploads/2013/04/slide3.jpg",
+          "url": "http://local.wordpress.dev/wp-content/uploads/2013/04/slide3.jpg",
           "width": 1600,
           "height": 401,
           "sizes": {
-            "thumbnail": "http://localhost/wp-content/uploads/2013/04/slide3-150x150.jpg",
+            "thumbnail": "http://local.wordpress.dev/wp-content/uploads/2013/04/slide3-150x150.jpg",
             "thumbnail-width": 150,
             "thumbnail-height": 150,
-            "medium": "http://localhost/wp-content/uploads/2013/04/slide3-300x75.jpg",
+            "medium": "http://local.wordpress.dev/wp-content/uploads/2013/04/slide3-300x75.jpg",
             "medium-width": 300,
             "medium-height": 75,
-            "large": "http://localhost/wp-content/uploads/2013/04/slide3-1024x257.jpg",
+            "large": "http://local.wordpress.dev/wp-content/uploads/2013/04/slide3-1024x257.jpg",
             "large-width": 640,
             "large-height": 161
           }
@@ -112,17 +114,17 @@
           "caption": "",
           "description": "",
           "mime_type": "image/jpeg",
-          "url": "http://localhost/wp-content/uploads/2013/04/slide2.jpg",
+          "url": "http://local.wordpress.dev/wp-content/uploads/2013/04/slide2.jpg",
           "width": 1600,
           "height": 401,
           "sizes": {
-            "thumbnail": "http://localhost/wp-content/uploads/2013/04/slide2-150x150.jpg",
+            "thumbnail": "http://local.wordpress.dev/wp-content/uploads/2013/04/slide2-150x150.jpg",
             "thumbnail-width": 150,
             "thumbnail-height": 150,
-            "medium": "http://localhost/wp-content/uploads/2013/04/slide2-300x75.jpg",
+            "medium": "http://local.wordpress.dev/wp-content/uploads/2013/04/slide2-300x75.jpg",
             "medium-width": 300,
             "medium-height": 75,
-            "large": "http://localhost/wp-content/uploads/2013/04/slide2-1024x257.jpg",
+            "large": "http://local.wordpress.dev/wp-content/uploads/2013/04/slide2-1024x257.jpg",
             "large-width": 640,
             "large-height": 161
           }
@@ -138,17 +140,17 @@
           "caption": "",
           "description": "",
           "mime_type": "image/jpeg",
-          "url": "http://localhost/wp-content/uploads/2013/04/slide1.jpg",
+          "url": "http://local.wordpress.dev/wp-content/uploads/2013/04/slide1.jpg",
           "width": 1600,
           "height": 401,
           "sizes": {
-            "thumbnail": "http://localhost/wp-content/uploads/2013/04/slide1-150x150.jpg",
+            "thumbnail": "http://local.wordpress.dev/wp-content/uploads/2013/04/slide1-150x150.jpg",
             "thumbnail-width": 150,
             "thumbnail-height": 150,
-            "medium": "http://localhost/wp-content/uploads/2013/04/slide1-300x75.jpg",
+            "medium": "http://local.wordpress.dev/wp-content/uploads/2013/04/slide1-300x75.jpg",
             "medium-width": 300,
             "medium-height": 75,
-            "large": "http://localhost/wp-content/uploads/2013/04/slide1-1024x257.jpg",
+            "large": "http://local.wordpress.dev/wp-content/uploads/2013/04/slide1-1024x257.jpg",
             "large-width": 640,
             "large-height": 161
           }

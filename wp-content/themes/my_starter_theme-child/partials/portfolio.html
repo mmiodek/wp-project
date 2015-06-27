@@ -1,1 +1,31 @@
-this is portfolio
+<div id="primary" class="content-area">
+	<main id="main" class="site-main" role="main">
+
+		<header class="entry-header">
+			<h3 class="entry-title">Portfolio</h3>				
+		</header><!-- entry-header -->
+
+		<nav id="filters">
+		Search: <input ng-model="query">
+			<ul>
+				<li ng-click="clearFilters()"><span>All</span></li>
+				<li ng-repeat="tag in tagsArray" ng-click="applyFilter(tag)" data-filter=".{{tag}}"><span>{{tag}}</span></li>
+			</ul>
+		</nav>				
+
+		<article  class="portfolio-holder" ng-cloak class="ng-cloak">
+			<a ng-repeat="portfolio in portfolios | filter: query | filter: tagFilter" href="http://local.wordpress.dev/portfolio/#" data-tags="{{portfolio.tags | explode}}" class="portfolio-item-wrapper web mobile">
+
+				<figure class="portfolio-item">
+
+					<img class="portfolio-img" ng-src="{{portfolio.picture}}">
+					<figcaption class="portfolio-caption">
+						<h4>{{portfolio.title}}</h4>
+						<p>{{portfolio.description}}</p>
+					</figcaption>
+					<div class="slide-up-cover"></div>
+				</figure>
+			</a>
+		</article> <!-- end of portfolio-holde -->
+	</main>
+</div><!-- end of primary -->

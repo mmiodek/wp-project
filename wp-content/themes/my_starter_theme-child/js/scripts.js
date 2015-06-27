@@ -1,9 +1,26 @@
 (function(){
 
-	var app = angular.module('app', [
-		'ngRoute'
-	]);
+var app = angular.module('app', [
+	'ngRoute'
+]);
 
+
+app.filter('explode',function() {
+	return function(input) {
+		var current_tags = ""
+		if(input) {
+			for (var i = 0; i < input.length; i++) {
+				if (i < input.length-1) {
+					current_tags += input[i].tag + " ";
+				}
+				else {
+					current_tags += input[i].tag;
+				}
+			};
+			return current_tags;
+		}
+	};
+});
 
 app.config(['$routeProvider',
   function($routeProvider) {
@@ -35,9 +52,10 @@ app.config(['$routeProvider',
 	app.controller('Main', function($scope, $http, $interval){
 		var myInterval = 5000;
 		$scope.slides = [];
+		$scope.gallery = [];
 		$http.get('wp-json/pages/5').success(function(data){
 			$scope.slides = data.acf.slider;
-			console.log($scope.slides);
+			$scope.gallery = data.acf.gallery;
 		});
 		
 		// ------------ This function can be used when ng-if is replaced with ng-show ----------------
@@ -87,8 +105,34 @@ app.config(['$routeProvider',
 
 	});
 
-	app.controller('Portfolio', function($scope){
-		console.log('Portfolio file loaded.');
+	app.controller('Portfolio', function($scope, $http){
+		$scope.portfolios = [];
+		$scope.tagsArray = [];
+		$scope.tagFilter = "";
+		
+
+		$scope.applyFilter = function(tag){		
+			$scope.tagFilter = tag;
+		};
+		$scope.clearFilters = function(){
+			$scope.tagFilter = "";
+		};
+
+		$http.get('wp-json/pages/27').success(function(data){
+			$scope.portfolios = data.acf['portfolio-element'];
+			for (var i = 0; i < $scope.portfolios.length;i++) {
+				var tags = $scope.portfolios[i].tags;	
+				for (var j = 0; j < tags.length; j++) {
+					var singleTag = tags[j].tag;
+					if ($scope.tagsArray.indexOf(singleTag) == -1) {
+						$scope.tagsArray.push(singleTag);
+					};							
+				}
+			}
+		});
+		
+		
+
 	});
 
 
