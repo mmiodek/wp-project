@@ -40,3 +40,30 @@
 	padding: 10px 15px;
 	border-radius: 5px;
 }
+
+#filters ul li {
+  display: inline-block;
+  border: 2px solid #5f7087;
+  width: 150px;
+  margin: -1px;
+  background-color: #fff;
+  display: block;
+  padding: 10px 20px;
+  color: #333333;
+  font-family: 'Open Sans', Arial, Tahoma, Sans;
+  font-size: 1em;
+  text-align: center;
+  text-transform: uppercase;
+}
+#filters ul li:first-child {
+  border-radius: 5px 0 0 5px;
+}
+#filters ul li:last-child {
+  border-radius: 0 5px 5px 0;
+}
+
+#filters ul li:hover, #filters ul li.active {
+  cursor: pointer;
+  color: #fff;
+  background-color: #5f7087;
+}

@@ -1,7 +1,7 @@
 (function(){
 
 var app = angular.module('app', [
-	'ngRoute'
+	'ngRoute','iso.directives', 'hljs'
 ]);
 
 

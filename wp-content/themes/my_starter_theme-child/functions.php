@@ -32,20 +32,33 @@ function theme_enqueue_scripts() {
 	);
 
 	wp_register_script(
-		'angularjs-isotope',
-		get_stylesheet_directory_uri() . '/bower_components/angular-isotope/dist/angular-isotope.min.js'
+		'jquery',
+		get_stylesheet_directory_uri() . '/js/vendor/jquery-2.1.0.min.js'
+	);
+
+
+	wp_register_script(
+		'angular-jquery',
+		get_stylesheet_directory_uri() . '/bower_components/angular-jquery/dist/angular-jquery.min.js'
+	);
+
+
+
+	wp_register_script(
+		'isotope',
+		get_stylesheet_directory_uri() . '/bower_components/isotope/dist/isotope.pkgd.min.js'
 	);
 
 	wp_register_script(
-		'jquery',
-		get_stylesheet_directory_uri() . '/bower_components/jquery/dist/jquery.min.js'
+		'angularjs-isotope',
+		get_stylesheet_directory_uri() . '/bower_components/angular-isotope/dist/angular-isotope.js'
 	);
 
 
 	wp_enqueue_script(
 		'my-scripts',
 		get_stylesheet_directory_uri() . '/js/scripts.js',
-		array( 'angularjs', 'angularjs-route', 'angularjs-resource','angularjs-touch','angularjs-isotope', 'jquery')
+		array( 'angularjs', 'angularjs-route', 'angularjs-resource','angular-jquery','isotope','angularjs-isotope')
 	);
 
 

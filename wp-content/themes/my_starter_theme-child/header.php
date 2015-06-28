@@ -21,11 +21,10 @@
 <link href='http://fonts.googleapis.com/css?family=Open+Sans|Baumans' rel='stylesheet' type='text/css'/>
 
 <!-- include extern jQuery file but fall back to local file if extern one fails to load !-->
-<!--<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
 <script type="text/javascript">window.jQuery || document.write('<script type="text\/javascript" src="<?php echo get_template_directory_uri(); ?>js\/jquery.min"><\/script>')</script>
 -->
 <!-- external javascripts -->
-
 
 
 <?php wp_head(); ?>
