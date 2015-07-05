@@ -16,6 +16,21 @@ function theme_enqueue_scripts() {
 		get_stylesheet_directory_uri() . '/bower_components/angular/angular.min.js'
 	);
 
+	wp_enqueue_script(
+		'controllersjs',
+		get_stylesheet_directory_uri() . '/js/controllers.js'
+	);
+
+	wp_enqueue_script(
+		'filtersjs',
+		get_stylesheet_directory_uri() . '/js/filters.js'
+	);
+
+	wp_enqueue_script(
+		'servicesjs',
+		get_stylesheet_directory_uri() . '/js/services.js'
+	);
+
 	wp_register_script(
 		'angularjs-route',
 		get_stylesheet_directory_uri() . '/bower_components/angular-route/angular-route.min.js'
@@ -58,7 +73,15 @@ function theme_enqueue_scripts() {
 	wp_enqueue_script(
 		'my-scripts',
 		get_stylesheet_directory_uri() . '/js/scripts.js',
-		array( 'angularjs', 'angularjs-route', 'angularjs-resource','angular-jquery','isotope','angularjs-isotope')
+		array( 'angularjs',
+			'controllersjs',
+			'filtersjs',
+			'servicesjs',
+			'angularjs-route',
+			'angularjs-resource',
+			'angular-jquery',
+			'isotope',
+			'angularjs-isotope')
 	);
 
 

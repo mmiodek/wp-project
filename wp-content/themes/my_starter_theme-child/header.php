@@ -23,7 +23,7 @@
 <!-- include extern jQuery file but fall back to local file if extern one fails to load !-->
 <script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
 <script type="text/javascript">window.jQuery || document.write('<script type="text\/javascript" src="<?php echo get_template_directory_uri(); ?>js\/jquery.min"><\/script>')</script>
--->
+
 <!-- external javascripts -->
 
 
@@ -33,7 +33,7 @@
 <body  ng-app="app">
 	<header>
 
-		<h1>Lingulo HTML5</h1>
+		<h1><a href="#/">Lingulo HTML5<a/></h1>
 		<p>A responsive website tutorial</p>
 		<nav id="site-navigation" class="main-nav" role="navigation">
 			<div class="menu">
